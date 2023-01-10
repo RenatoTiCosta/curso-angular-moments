@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./eventos.component.scss']
 })
 export class EventosComponent {
+  show: boolean = false;
+  showMessage(): void {
+    this.show = !this.show;
+  }
 
 }
